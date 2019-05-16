@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Document</title>
+
+    <style> 
+        
+
+        div{
+            width: 95%;
+            height: 95%;
+            background-color: black;
+            border-radius: 50%;
+            border: solid red 4px;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+
+
+        #kryg{
+            width: 600px;
+            height: 600px;
+            background-color: green;
+            border-radius: 50%;
+            border: solid red 4px;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            margin-top: 80px;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    
+    <div id="kryg">
+        <div id="kryg2">
+            <div id="kryg3">
+                <div id="kryg4">
+                    <div id="kryg5">
+                        <div id="kryg6">
+                            <div id="kryg7">
+                                <div id="kryg8">
+                                    <div id="kryg9">
+                                        <div id="kryg10">
+                                            <div id="kryg11">
+                                                <div id="kryg12">
+                                                    <div id="kryg13">
+                                                        <div id="kryg14">
+                                                            <div id="kryg15">
+                                                                <div id="kryg16">
+                                                                    <div id="kryg17">
+                                                                        <div id="kryg18">
+                                                                            <div id="kryg19">
+                                                                                <div id="kryg20">
+                                                                                    <div id="kryg21">
+                                                                                        <div id="kryg22">
+                                                                                            <div id="kryg23">
+                                                                                                <div id="kryg24">
+                                                                                                    <div id="kryg25">
+                                                                                                        <div id="kryg26">
+                                                                                                            <div id="kryg27">
+                                                                                                                <div id="kryg28">
+                                                                                                                    <div id="kryg28">
+                                                                                                                        
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+    
+    $("div:not(#kryg)").mouseover(function(){
+
+                    var tmp = $(this).css("background-color");
+	                $(this).css("background-color", $(this).parent().css("background-color",));
+	                $(this).parent().css("background-color", "white");
+
+        });
+        
+        //$('div:not(#kryg)');
+        
+    </script>
+
+
+</body>
+</html>
